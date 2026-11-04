@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelMate | Packages</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">Travel<span>Mate</span></a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html" class="active">Packages</a></li>
+        <li><a href="calculator.html">Cost Calculator</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="nav-button">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Travel packages</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="Domestic" type="button">Domestic</button>
+          <button class="filter-btn" data-filter="International" type="button">International</button>
+        </div>
+
+        <p class="inline-note">Domestic packages use a train or flight preference during booking. International packages keep the existing booking flow. All prices are approximate per-person ground package estimates for twin-share accommodation.</p>
+
+        <div class="calculator-wrap">
+          <div class="field-block" style="width:min(520px,100%);">
+            <label for="packages-departure-city">Departure city or town (optional)</label>
+            <input id="packages-departure-city" type="text" list="packages-departure-cities" maxlength="120" placeholder="Enter your starting city" />
+            <datalist id="packages-departure-cities"></datalist>
+          </div>
+        </div>
+
+        <div class="package-grid">
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/goa.jpeg" alt="Goa Beach Holiday" />
+            <div class="card-content">
+              <h3>Goa Beach Holiday</h3>
+              <ul class="meta-list"><li>3 days / 2 nights</li><li>₹18,500 per person</li></ul>
+              <p>Enjoy beach walks, local food, and a relaxed coastal holiday with friends or family.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Goa%20Beach%20Holiday&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/manali.jpeg" alt="Manali Mountain Trip" />
+            <div class="card-content">
+              <h3>Manali Mountain Trip</h3>
+              <ul class="meta-list"><li>4 days / 3 nights</li><li>₹23,500 per person</li></ul>
+              <p>Take in snow-touched views, cool weather, and memorable scenic moments.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Manali%20Mountain%20Trip&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/jaipur.jpeg" alt="Jaipur Heritage Tour" />
+            <div class="card-content">
+              <h3>Jaipur Heritage Tour</h3>
+              <ul class="meta-list"><li>3 days / 2 nights</li><li>₹16,500 per person</li></ul>
+              <p>Explore fort views, city markets, and royal heritage in an easy weekend trip.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Jaipur%20Heritage%20Tour&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/kerala.jpeg" alt="Kerala Nature Tour" />
+            <div class="card-content">
+              <h3>Kerala Nature Tour</h3>
+              <ul class="meta-list"><li>5 days / 4 nights</li><li>₹32,000 per person</li></ul>
+              <p>Discover green landscapes, peaceful backwaters, and a slow-paced escape.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Kerala%20Nature%20Tour&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/kashmir.jpeg" alt="Kashmir Valley Escape" />
+            <div class="card-content">
+              <h3>Kashmir Valley Escape</h3>
+              <ul class="meta-list"><li>5 days / 4 nights</li><li>₹39,000 per person</li></ul>
+              <p>Enjoy alpine valleys, quiet lake views, and a peaceful northern retreat.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Kashmir%20Valley%20Escape&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/shimla.jpeg" alt="Shimla Weekend Getaway" />
+            <div class="card-content">
+              <h3>Shimla Weekend Getaway</h3>
+              <ul class="meta-list"><li>3 days / 2 nights</li><li>₹15,500 per person</li></ul>
+              <p>Spend a quick break in cool hill weather with scenic walks and relaxed evenings.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Shimla%20Weekend%20Getaway&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/rishikesh.jpeg" alt="Rishikesh Adventure Trip" />
+            <div class="card-content">
+              <h3>Rishikesh Adventure Trip</h3>
+              <ul class="meta-list"><li>3 days / 2 nights</li><li>₹14,500 per person</li></ul>
+              <p>Try adventure activities, river views, and a lively riverside atmosphere.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Rishikesh%20Adventure%20Trip&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/udaipur.jpeg" alt="Udaipur Royal Heritage Tour" />
+            <div class="card-content">
+              <h3>Udaipur Royal Heritage Tour</h3>
+              <ul class="meta-list"><li>3 days / 2 nights</li><li>₹17,000 per person</li></ul>
+              <p>Walk through royal palaces, lakefront streets, and colourful heritage views.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Udaipur%20Royal%20Heritage%20Tour&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/andaman.jpeg" alt="Andaman Island Escape" />
+            <div class="card-content">
+              <h3>Andaman Island Escape</h3>
+              <ul class="meta-list"><li>5 days / 4 nights</li><li>₹43,000 per person</li></ul>
+              <p>Relax across clear waters, island beaches, and scenic coastal views.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Andaman%20Island%20Escape&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/ooty.jpeg" alt="Ooty Hill Station Holiday" />
+            <div class="card-content">
+              <h3>Ooty Hill Station Holiday</h3>
+              <ul class="meta-list"><li>4 days / 3 nights</li><li>₹21,000 per person</li></ul>
+              <p>Enjoy a calm hill station break with gardens, viewpoints, and cool air.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Ooty%20Hill%20Station%20Holiday&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/varanasi.jpeg" alt="Varanasi Spiritual Tour" />
+            <div class="card-content">
+              <h3>Varanasi Spiritual Tour</h3>
+              <ul class="meta-list"><li>3 days / 2 nights</li><li>₹14,000 per person</li></ul>
+              <p>Experience river ghats, evening aarti, and a calm cultural journey.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Varanasi%20Spiritual%20Tour&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="Domestic">
+            <img class="card-image" src="images/coorg.jpeg" alt="Coorg Nature Retreat" />
+            <div class="card-content">
+              <h3>Coorg Nature Retreat</h3>
+              <ul class="meta-list"><li>4 days / 3 nights</li><li>₹23,000 per person</li></ul>
+              <p>Unwind among coffee plantations, forested hills, and fresh mountain air.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: travel to the destination, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Coorg%20Nature%20Retreat&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="International">
+            <img class="card-image" src="images/bali.jpeg" alt="Bali Island Escape" />
+            <div class="card-content">
+              <h3>Bali Island Escape</h3>
+              <ul class="meta-list"><li>5 days / 4 nights</li><li>₹65,000 per person</li></ul>
+              <p>Enjoy tropical beaches, scenic views, and a calm island getaway.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: international airfare, visa, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Bali%20Island%20Escape&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="International">
+            <img class="card-image" src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=80" alt="Singapore City Explorer" />
+            <div class="card-content">
+              <h3>Singapore City Explorer</h3>
+              <ul class="meta-list"><li>4 days / 3 nights</li><li>₹75,000 per person</li></ul>
+              <p>Explore city attractions, food streets, and the energetic atmosphere.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: international airfare, visa, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Singapore%20City%20Explorer&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="International">
+            <img class="card-image" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubai City Highlights" />
+            <div class="card-content">
+              <h3>Dubai City Highlights</h3>
+              <ul class="meta-list"><li>5 days / 4 nights</li><li>₹85,000 per person</li></ul>
+              <p>Discover iconic skyline views, shopping zones, and city landmarks.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: international airfare, visa, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Dubai%20City%20Highlights&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="International">
+            <img class="card-image" src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=80" alt="Australia Highlights" />
+            <div class="card-content">
+              <h3>Australia Highlights</h3>
+              <ul class="meta-list"><li>7 days / 6 nights</li><li>₹1,75,000 per person</li></ul>
+              <p>Take in famous landscapes, city highlights, and a memorable international journey.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: international airfare, visa, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Australia%20Highlights&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="International">
+            <img class="card-image" src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=900&q=80" alt="New Zealand Discovery" />
+            <div class="card-content">
+              <h3>New Zealand Discovery</h3>
+              <ul class="meta-list"><li>8 days / 7 nights</li><li>₹1,95,000 per person</li></ul>
+              <p>Experience stunning landscapes, nature-rich scenery, and exciting scenic stops.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: international airfare, visa, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=New%20Zealand%20Discovery&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+
+          <article class="card package-card" data-category="International">
+            <img class="card-image" src="images/swiss.jpeg" alt="Swiss Alps Discovery" />
+            <div class="card-content">
+              <h3>Swiss Alps Discovery</h3>
+              <ul class="meta-list"><li>7 days / 6 nights</li><li>₹2,15,000 per person</li></ul>
+              <p>Enjoy snow-capped peaks, mountain towns, and a scenic European escape.</p>
+              <ul>
+                <li>Includes: twin-share accommodation, breakfast, local transfers, and a planned sightseeing allowance.</li>
+                <li>Excludes: international airfare, visa, lunch and dinner, travel insurance, and personal expenses.</li>
+              </ul>
+              <a href="booking.html?destination=Swiss%20Alps%20Discovery&travellers=1" class="card-link">Book Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="logo">Travel<span>Mate</span></h3>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>© 2026 TravelMate. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

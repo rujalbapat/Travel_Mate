@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelMate | Destinations</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">Travel<span>Mate</span></a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="calculator.html">Cost Calculator</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="nav-button">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Top destinations</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="Domestic" type="button">Domestic</button>
+          <button class="filter-btn" data-filter="International" type="button">International</button>
+        </div>
+
+        <div class="destination-grid">
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/goa.jpeg" alt="Goa Beach Holiday" />
+            <div class="card-content">
+              <h3>Goa Beach Holiday</h3>
+              <p>Relax on sunlit beaches and enjoy a lively coastal escape.</p>
+              <ul class="meta-list">
+                <li>3 days / 2 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹18,500 per person</span>
+                <a href="booking.html?destination=Goa%20Beach%20Holiday&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/manali.jpeg" alt="Manali Mountain Trip" />
+            <div class="card-content">
+              <h3>Manali Mountain Trip</h3>
+              <p>Explore mountain views, cool weather, and scenic valley roads.</p>
+              <ul class="meta-list">
+                <li>4 days / 3 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹23,500 per person</span>
+                <a href="booking.html?destination=Manali%20Mountain%20Trip&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/jaipur.jpeg" alt="Jaipur Heritage Tour" />
+            <div class="card-content">
+              <h3>Jaipur Heritage Tour</h3>
+              <p>Visit historic forts, markets, and colourful royal landmarks.</p>
+              <ul class="meta-list">
+                <li>3 days / 2 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹16,500 per person</span>
+                <a href="booking.html?destination=Jaipur%20Heritage%20Tour&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80" alt="Kerala Nature Tour" />
+            <div class="card-content">
+              <h3>Kerala Nature Tour</h3>
+              <p>Enjoy green landscapes, backwaters, and a calm nature getaway.</p>
+              <ul class="meta-list">
+                <li>5 days / 4 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹32,000 per person</span>
+                <a href="booking.html?destination=Kerala%20Nature%20Tour&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/kashmir.jpeg" alt="Kashmir Valley Escape" />
+            <div class="card-content">
+              <h3>Kashmir Valley Escape</h3>
+              <p>Relax amid valleys, lakes, and calm northern scenery.</p>
+              <ul class="meta-list">
+                <li>5 days / 4 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹39,000 per person</span>
+                <a href="booking.html?destination=Kashmir%20Valley%20Escape&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/shimla.jpeg" alt="Shimla Weekend Getaway" />
+            <div class="card-content">
+              <h3>Shimla Weekend Gateway</h3>
+              <p>Take a quick hill break with scenic walks and cool weather.</p>
+              <ul class="meta-list">
+                <li>3 days / 2 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹15,500 per person</span>
+                <a href="booking.html?destination=Shimla%20Weekend%20Getaway&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/Rishikesh.jpeg" alt="Rishikesh Adventure Trip" />
+            <div class="card-content">
+              <h3>Rishikesh Adventure Trip</h3>
+              <p>Enjoy river views, adventure activities, and a lively riverside trip.</p>
+              <ul class="meta-list">
+                <li>3 days / 2 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹14,500 per person</span>
+                <a href="booking.html?destination=Rishikesh%20Adventure%20Trip&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/udaipur.jpeg" alt="Udaipur Royal Heritage Tour" />
+            <div class="card-content">
+              <h3>Udaipur Royal Heritage Tour</h3>
+              <p>Walk through palace views, lakefront streets, and royal heritage.</p>
+              <ul class="meta-list">
+                <li>3 days / 2 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹17,000 per person</span>
+                <a href="booking.html?destination=Udaipur%20Royal%20Heritage%20Tour&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/andaman.jpeg" alt="Andaman Island Escape" />
+            <div class="card-content">
+              <h3>Andaman Island Escape</h3>
+              <p>Relax across clear waters, island beaches, and scenic coastlines.</p>
+              <ul class="meta-list">
+                <li>5 days / 4 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹43,000 per person</span>
+                <a href="booking.html?destination=Andaman%20Island%20Escape&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/ooty.jpeg" alt="Ooty Hill Station Holiday" />
+            <div class="card-content">
+              <h3>Ooty Hill Station Holiday</h3>
+              <p>Enjoy a calm hill station break with viewpoints and cool air.</p>
+              <ul class="meta-list">
+                <li>4 days / 3 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹21,000 per person</span>
+                <a href="booking.html?destination=Ooty%20Hill%20Station%20Holiday&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/varanasi.jpeg" alt="Varanasi Spiritual Tour" />
+            <div class="card-content">
+              <h3>Varanasi Spiritual Tour</h3>
+              <p>Experience river ghats, evening aarti, and a calm cultural journey.</p>
+              <ul class="meta-list">
+                <li>3 days / 2 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹14,000 per person</span>
+                <a href="booking.html?destination=Varanasi%20Spiritual%20Tour&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="Domestic">
+            <img class="card-image" src="images/coorg.jpeg" alt="Coorg Nature Retreat" />
+            <div class="card-content">
+              <h3>Coorg Nature Retreat</h3>
+              <p>Unwind among coffee plantations, forested hills, and fresh mountain air.</p>
+              <ul class="meta-list">
+                <li>4 days / 3 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹23,000 per person</span>
+                <a href="booking.html?destination=Coorg%20Nature%20Retreat&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="International">
+            <img class="card-image" src="images/bali.jpeg" alt="Bali Island Escape" />
+            <div class="card-content">
+              <h3>Bali Island Escape</h3>
+              <p>Unwind in tropical beaches and warm island scenery.</p>
+              <ul class="meta-list">
+                <li>5 days / 4 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹65,000 per person</span>
+                <a href="booking.html?destination=Bali%20Island%20Escape&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="International">
+            <img class="card-image" src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=80" alt="Singapore City Explorer" />
+            <div class="card-content">
+              <h3>Singapore City Explorer</h3>
+              <p>See modern attractions, city lights, and diverse food spots.</p>
+              <ul class="meta-list">
+                <li>4 days / 3 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹75,000 per person</span>
+                <a href="booking.html?destination=Singapore%20City%20Explorer&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="International">
+            <img class="card-image" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubai City Highlights" />
+            <div class="card-content">
+              <h3>Dubai City Highlights</h3>
+              <p>Experience modern architecture, shopping, and city landmarks.</p>
+              <ul class="meta-list">
+                <li>5 days / 4 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹85,000 per person</span>
+                <a href="booking.html?destination=Dubai%20City%20Highlights&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="International">
+            <img class="card-image" src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=80" alt="Australia Highlights" />
+            <div class="card-content">
+              <h3>Australia Highlights</h3>
+              <p>Discover iconic scenery, city charm, and wide-open landscapes.</p>
+              <ul class="meta-list">
+                <li>7 days / 6 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹1,75,000 per person</span>
+                <a href="booking.html?destination=Australia%20Highlights&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="International">
+            <img class="card-image" src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=900&q=80" alt="New Zealand Discovery" />
+            <div class="card-content">
+              <h3>New Zealand Discovery</h3>
+              <p>Enjoy scenic routes, natural beauty, and unforgettable coastal views.</p>
+              <ul class="meta-list">
+                <li>8 days / 7 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹1,95,000 per person</span>
+                <a href="booking.html?destination=New%20Zealand%20Discovery&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card destination-card" data-category="International">
+            <img class="card-image" src="images/swiss.jpeg" alt="Swiss Alps Discovery" />
+            <div class="card-content">
+              <h3>Swiss Alps Discovery</h3>
+              <p>Experience mountain towns, crisp air, and spectacular alpine views.</p>
+              <ul class="meta-list">
+                <li>7 days / 6 nights</li>
+              </ul>
+              <div class="price-row">
+                <span class="price-tag">₹2,15,000 per person</span>
+                <a href="booking.html?destination=Swiss%20Alps%20Discovery&travellers=1" class="card-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="inline-note">Sample estimates for a student project. Domestic packages show train or flight as a separate booking choice, while international packages continue with the existing flow. Flights, visas, meals, insurance, and activities are not included unless expressly stated.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="logo">Travel<span>Mate</span></h3>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>© 2026 TravelMate. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

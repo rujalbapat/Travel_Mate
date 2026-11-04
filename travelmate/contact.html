@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelMate | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">Travel<span>Mate</span></a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="calculator.html">Cost Calculator</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="booking.html" class="nav-button">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Contact us</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container calculator-wrap">
+        <div class="calculator-card">
+          <form action="php/process-contact.php" method="POST">
+            <input type="hidden" name="csrf_token" value="" />
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" hidden />
+            <div class="form-grid">
+              <div class="field-block">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" maxlength="150" autocomplete="name" required />
+              </div>
+
+              <div class="field-block">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" maxlength="150" autocomplete="email" required />
+              </div>
+
+              <div class="field-block">
+                <label for="contact-subject">Subject</label>
+                <input id="contact-subject" name="subject" type="text" maxlength="200" required />
+              </div>
+
+              <div class="field-block">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" minlength="10" maxlength="2000" required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="form-button">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="logo">Travel<span>Mate</span></h3>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="calculator.html">Calculator</a>
+      </div>
+      <div>© 2026 TravelMate. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

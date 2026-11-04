@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelMate | Booking</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">Travel<span>Mate</span></a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="calculator.html">Cost Calculator</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="nav-button active">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Book your trip</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container calculator-wrap">
+        <div class="calculator-card">
+          <form id="booking-form" action="php/process-booking.php" method="POST">
+            <input type="hidden" name="csrf_token" value="" />
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" hidden />
+            <div class="form-grid">
+              <div class="field-block">
+                <label for="full-name">Full name</label>
+                <input id="full-name" name="full_name" type="text" maxlength="150" autocomplete="name" required />
+              </div>
+
+              <div class="field-block">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" maxlength="150" autocomplete="email" required />
+              </div>
+
+              <div class="field-block">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" maxlength="30" autocomplete="tel" required />
+              </div>
+
+              <div class="field-block">
+                <label for="booking-destination">Destination</label>
+                <select id="booking-destination" name="destination"></select>
+              </div>
+
+              <div class="package-summary" aria-live="polite">
+                <div class="summary-item">
+                  <span>Selected package</span>
+                  <strong id="booking-summary-package">Goa Beach Holiday</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Duration</span>
+                  <strong id="booking-summary-duration">3 days / 2 nights</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Estimated price per person</span>
+                  <strong id="booking-summary-price">₹12,999</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Category</span>
+                  <strong id="booking-summary-category">Domestic</strong>
+                </div>
+              </div>
+
+              <div class="field-block" id="travel-mode-field">
+                <label>Preferred travel mode</label>
+                <div class="travel-mode-options">
+                  <label class="travel-mode-option" for="travel-mode-train">
+                    <input id="travel-mode-train" type="radio" name="travel_mode_choice" value="Train" checked />
+                    Train
+                  </label>
+                  <label class="travel-mode-option" for="travel-mode-flight">
+                    <input id="travel-mode-flight" type="radio" name="travel_mode_choice" value="Flight" />
+                    Flight
+                  </label>
+                </div>
+                <input type="hidden" id="travel-mode" name="travel_mode" value="Train" />
+                <input type="hidden" id="package-duration" name="package_duration" value="3 days / 2 nights" />
+                <input type="hidden" id="package-price" name="package_price" value="18500" />
+                <input type="hidden" id="package-category" name="package_category" value="Domestic" />
+                <p class="travel-mode-note" id="travel-mode-note">Choose either train or flight for this domestic package. Transport fare is additional and requires separate confirmation.</p>
+              </div>
+
+              <div class="field-block" id="departure-city-field" hidden>
+                <label for="departure-city">Departure city or town</label>
+                <input id="departure-city" name="departure_city" type="text" list="departure-city-suggestions" maxlength="120" autocomplete="address-level2" placeholder="Enter your starting city" />
+                <datalist id="departure-city-suggestions"></datalist>
+              </div>
+
+              <div class="field-block" id="departure-location-field" hidden>
+                <label id="departure-location-label" for="departure-location">Departure Railway Station</label>
+                <input id="departure-location" name="departure_location" type="text" list="departure-location-suggestions" maxlength="180" placeholder="Select or enter a railway station" />
+                <datalist id="departure-location-suggestions"></datalist>
+                <p class="travel-mode-note"></p>
+              </div>
+
+              <div class="field-block">
+                <label for="travel-date">Travel date</label>
+                <input id="travel-date" name="travel_date" type="date" required />
+              </div>
+
+              <div class="field-row">
+                <div class="field-block">
+                  <label for="adults">Number of adults</label>
+                  <input id="adults" name="adults" type="number" min="1" max="20" value="1" required />
+                </div>
+
+                <div class="field-block">
+                  <label for="children">Number of children (0–12 years)</label>
+                  <input id="children" name="children" type="number" min="0" max="20" value="0" required />
+                </div>
+              </div>
+
+              <div class="field-block">
+                <label for="nights">Number of nights</label>
+                <input id="nights" name="nights" type="number" min="1" max="30" value="2" readonly required />
+              </div>
+
+              <div class="field-block">
+                <label for="special-requests">Special requests</label>
+                <textarea id="special-requests" name="special_requests" maxlength="1000"></textarea>
+              </div>
+
+              <div class="booking-summary">
+                <h3>Booking summary</h3>
+                <table class="breakdown-table" aria-label="Booking trip cost estimate">
+                  <tbody>
+                    <tr>
+                      <td>Package price per person</td>
+                      <td class="amount" id="booking-summary-price-table">₹12,999</td>
+                    </tr>
+                    <tr>
+                      <td>Number of travellers</td>
+                      <td class="amount" id="booking-summary-travellers">1</td>
+                    </tr>
+                    <tr>
+                      <td>Travel mode</td>
+                      <td class="amount" id="booking-summary-mode">Train</td>
+                    </tr>
+                    <tr>
+                      <td>Departure</td>
+                      <td class="amount" id="booking-summary-departure">Choose your departure city and location</td>
+                    </tr>
+                    <tr>
+                      <td>Train or flight fare to destination</td>
+                      <td class="amount" id="booking-summary-transport">Additional, requires separate confirmation</td>
+                    </tr>
+                    <tr class="total-row">
+                      <td>Estimated total</td>
+                      <td class="amount" id="booking-summary-total">₹12,999</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="calc-note">Package price is an approximate per-person ground estimate for twin-share accommodation. It includes accommodation, breakfast, local transfers, and a planned sightseeing allowance. Train or flight fare to the destination is excluded and is not live-priced or booked here. International airfare, visas, travel insurance, lunch and dinner, and personal expenses are excluded.</p>
+              </div>
+
+              <div class="field-block">
+                <label for="estimated-total">Estimated total for booking</label>
+                <input id="estimated-total" name="estimated_total" type="text" readonly />
+              </div>
+
+              <input type="hidden" id="travellers" name="travellers" value="1" />
+              <input type="hidden" id="estimated-total-value" name="estimated_total_value" value="18500" />
+
+              <div class="form-actions">
+                <button type="submit" class="form-button">Submit Booking Request</button>
+              </div>
+            </div>
+          </form>
+          <p class="inline-note">This is a booking request and does not guarantee a confirmed reservation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="logo">Travel<span>Mate</span></h3>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>© 2026 TravelMate. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelMate | Cost Calculator</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">Travel<span>Mate</span></a>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="calculator.html" class="active">Cost Calculator</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="nav-button">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container calculator-wrap">
+      <div class="calculator-card">
+        <h2>Calculate Your Trip Budget</h2>
+        <div class="form-grid">
+          <div class="field-block">
+            <label for="calculator-destination">Destination</label>
+            <select id="calculator-destination" name="calculator-destination"></select>
+          </div>
+
+          <div class="field-block">
+            <label for="calculator-departure-city">Departure city or town (optional)</label>
+            <input id="calculator-departure-city" type="text" list="calculator-departure-cities" maxlength="120" placeholder="Enter your starting city" />
+            <datalist id="calculator-departure-cities"></datalist>
+          </div>
+
+          <div class="field-block">
+            <label for="accommodation-level">Accommodation level</label>
+            <select id="accommodation-level">
+              <option value="0.75">Budget (75% of standard room estimate)</option>
+              <option value="1" selected>Standard</option>
+              <option value="1.5">Comfort (150% of standard room estimate)</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field-block">
+              <label for="adult-count">Number of Adults</label>
+              <input id="adult-count" name="adult_count" type="number" min="1" max="20" value="1" inputmode="numeric" />
+            </div>
+
+            <div class="field-block">
+                  <label for="child-count">Number of Children (0–12 years)</label>
+              <input id="child-count" name="child_count" type="number" min="0" max="20" value="0" inputmode="numeric" />
+            </div>
+          </div>
+
+          <div class="field-block">
+            <label for="night-count">Number of Nights</label>
+            <input id="night-count" name="night_count" type="number" min="1" max="30" value="2" inputmode="numeric" />
+          </div>
+
+          <div class="cost-breakdown">
+            <table class="breakdown-table" aria-label="Trip cost breakdown">
+              <thead>
+                <tr>
+                  <th>Cost item</th>
+                  <th class="amount">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hotel stay</td>
+                  <td class="amount" id="hotel-cost">₹0</td>
+                </tr>
+                <tr>
+                  <td>Activities and sightseeing</td>
+                  <td class="amount" id="activity-cost">₹0</td>
+                </tr>
+                <tr>
+                  <td>Local transportation</td>
+                  <td class="amount" id="transport-cost">₹0</td>
+                </tr>
+                <tr>
+                  <td>Food and meals</td>
+                  <td class="amount" id="food-cost">₹0</td>
+                </tr>
+                <tr>
+                  <td>Other included package expenses</td>
+                  <td class="amount" id="other-cost">₹0</td>
+                </tr>
+                <tr class="total-row">
+                  <td>Estimated independent-trip budget</td>
+                  <td class="amount" id="estimated-total">₹0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="form-actions">
+            <button id="calculator-book" type="button" class="form-button">Book Now</button>
+            <button id="reset-calculator" type="button" class="secondary-btn-link">Reset</button>
+          </div>
+        </div>
+        <p id="calculator-validation" class="message-box error" role="alert" hidden>Please enter whole numbers within the allowed ranges, with no more than 20 travellers in total.</p>
+        <p class="calc-note">Approximate independent-trip budget, not a package price. Accommodation uses a standard room-per-night estimate and twin-share rooms; the accommodation choice adjusts lodging only. The displayed total covers the selected group and nights. Local transfers, meals, activities, and a small other-cost allowance are estimated. Train or flight fare to the destination, visas, insurance, and personal purchases are excluded. Actual costs vary by season and provider.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="logo">Travel<span>Mate</span></h3>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>© 2026 TravelMate. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

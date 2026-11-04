@@ -1,0 +1,20 @@
+[
+  {"name":"Goa Beach Holiday","country":"India","duration":"3 days / 2 nights","nights":2,"price":18500,"hotelRate":3500,"activityRate":1800,"transportRate":1100,"foodRate":1200,"otherCost":900},
+  {"name":"Manali Mountain Trip","country":"India","duration":"4 days / 3 nights","nights":3,"price":23500,"hotelRate":4200,"activityRate":2500,"transportRate":1400,"foodRate":1100,"otherCost":1000},
+  {"name":"Jaipur Heritage Tour","country":"India","duration":"3 days / 2 nights","nights":2,"price":16500,"hotelRate":3000,"activityRate":1700,"transportRate":1000,"foodRate":1100,"otherCost":800},
+  {"name":"Kerala Nature Tour","country":"India","duration":"5 days / 4 nights","nights":4,"price":32000,"hotelRate":4200,"activityRate":2600,"transportRate":1500,"foodRate":1250,"otherCost":1100},
+  {"name":"Kashmir Valley Escape","country":"India","duration":"5 days / 4 nights","nights":4,"price":39000,"hotelRate":5200,"activityRate":3500,"transportRate":2200,"foodRate":1500,"otherCost":1300},
+  {"name":"Shimla Weekend Getaway","country":"India","duration":"3 days / 2 nights","nights":2,"price":15500,"hotelRate":3000,"activityRate":1500,"transportRate":1000,"foodRate":1000,"otherCost":800},
+  {"name":"Rishikesh Adventure Trip","country":"India","duration":"3 days / 2 nights","nights":2,"price":14500,"hotelRate":2800,"activityRate":2200,"transportRate":1200,"foodRate":900,"otherCost":800},
+  {"name":"Udaipur Royal Heritage Tour","country":"India","duration":"3 days / 2 nights","nights":2,"price":17000,"hotelRate":3200,"activityRate":1900,"transportRate":1100,"foodRate":1100,"otherCost":800},
+  {"name":"Andaman Island Escape","country":"India","duration":"5 days / 4 nights","nights":4,"price":43000,"hotelRate":5200,"activityRate":3500,"transportRate":2500,"foodRate":1400,"otherCost":1500},
+  {"name":"Ooty Hill Station Holiday","country":"India","duration":"4 days / 3 nights","nights":3,"price":21000,"hotelRate":3500,"activityRate":1700,"transportRate":1300,"foodRate":1000,"otherCost":900},
+  {"name":"Varanasi Spiritual Tour","country":"India","duration":"3 days / 2 nights","nights":2,"price":14000,"hotelRate":2600,"activityRate":1200,"transportRate":1000,"foodRate":900,"otherCost":700},
+  {"name":"Coorg Nature Retreat","country":"India","duration":"4 days / 3 nights","nights":3,"price":23000,"hotelRate":3600,"activityRate":1800,"transportRate":1400,"foodRate":1100,"otherCost":900},
+  {"name":"Bali Island Escape","country":"Indonesia","duration":"5 days / 4 nights","nights":4,"price":65000,"hotelRate":8000,"activityRate":4500,"transportRate":3000,"foodRate":1800,"otherCost":2000},
+  {"name":"Singapore City Explorer","country":"Singapore","duration":"4 days / 3 nights","nights":3,"price":75000,"hotelRate":12000,"activityRate":12000,"transportRate":6000,"foodRate":2300,"otherCost":3000},
+  {"name":"Dubai City Highlights","country":"United Arab Emirates","duration":"5 days / 4 nights","nights":4,"price":85000,"hotelRate":15000,"activityRate":15000,"transportRate":8000,"foodRate":2400,"otherCost":3500},
+  {"name":"Australia Highlights","country":"Australia","duration":"7 days / 6 nights","nights":6,"price":175000,"hotelRate":16000,"activityRate":25000,"transportRate":18000,"foodRate":3500,"otherCost":5000},
+  {"name":"New Zealand Discovery","country":"New Zealand","duration":"8 days / 7 nights","nights":7,"price":195000,"hotelRate":16000,"activityRate":30000,"transportRate":22000,"foodRate":3000,"otherCost":5000},
+  {"name":"Swiss Alps Discovery","country":"Switzerland","duration":"7 days / 6 nights","nights":6,"price":215000,"hotelRate":20000,"activityRate":32000,"transportRate":22000,"foodRate":3500,"otherCost":5000}
+]
